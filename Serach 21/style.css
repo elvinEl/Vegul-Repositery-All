@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    line-height: 3;
+    font-size: 18px;
+}
+.nav ul a{
+    color: black;
+}
+.icons{
+    position: absolute;
+    top: 6.1rem;
+    right: 15rem;
+    font-size: 18px;
+}
+.icons i{
+    padding: 0 5px;
+    color: black;
+}
+.div-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    /* border: none; */
+}
+input{
+    width: 275px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+    border: none;
+}
+.icon-search i{
+    font-size: 25px;
+    color: black;
+}
+hr{
+    width: 70%;
+    margin: 3rem auto;
+}
+.div-bottom{
+    width: 50%;
+    margin: 0 auto;
+}
+.div-head p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.div-bot a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 42px;
+    background-color: rgba(245, 245, 245, 1);
+    font-size: 13px;
+    color: black;
+}
+.div-bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.div-pop p{
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: 14px;
+}
