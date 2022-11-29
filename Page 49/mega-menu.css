@@ -110,13 +110,13 @@
     clear: both;
   }
   
-  .icon-box {
+  /* .icon-box {
     display: flex;
     flex-direction: column;
     justify-content:center;
     padding-left: 12em;
     gap: 5em;
-  }
+  } */
   .icons i {
     margin: 0.5em;
     color: #000;
