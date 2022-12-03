@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="page49.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="modal1.css">
+    <link rel="stylesheet" href="hamburger-menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,45 +20,23 @@
 <body>
 
 
-    <!-- <div class="container">
-        <div class="div-flex">
-            <div class="logo">
-                <img src="img/vg 1.png" alt="">
-            </div>
 
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a href="#">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">New in</a>
-                    </li>
-                    <li>
-                        <a href="#">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="#">Bags</a>
-                    </li>
-                    <li>
-                        <a href="#">Jewellery</a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="icons">
-
-                <a href="#" class="trigger">
-                    <i class="fa-regular fa-circle-user"></i>
-                </a>
-                <a href="#" class="trigger1">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
-            </div> -->
     <nav>
+
+
+        <ul class="nav-links">
+            <li><a href="#">shop </a></li>
+            <li><a href="#">new in</a></li>
+            <li><a href="#">accessories</a></li>
+            <li><a href="#">bags</a></li>
+            <li><a href="#">jewellery</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
         <section class="container">
             <div class="menus">
 
@@ -73,7 +52,7 @@
 
 
 
-            <li><a href="#">Shop in</a></li>
+            <li class="droppable"><a href="#">Shop in</a></li>
             <li class="droppable">
                 <a href="#">New in</a>
                 <div class="mega-menu">
@@ -281,26 +260,29 @@
                 <!-- .mega-menu-->
             </li>
 
-            <div class="icon-box">
-                <div class="icons">
+            <!-- <div class="icon-box"> -->
+            <div class="icons-i">
 
-                    <a href="#" class="trigger">
-                        <i class="fa-regular fa-circle-user"></i>
-                    </a>
-                    <a href="#" class="trigger1">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-user"></i>
+                </a>
+                <a href="#" class="trigger1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
 
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-solid fa-location-dot"></i></a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
+            <!-- </div> -->
 
         </ul>
 
         <!-- .container .ul-reset -->
     </nav>
+
+
+
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
@@ -455,13 +437,20 @@
 
         </div>
     </div>
-
+<hr class="hr-line">
 
     </div>
     </div>
 
+
+    <div class="div-main-box">
+        <p><strong>
+            ACCOUNT DETAILS
+        </strong></p>
+    </div>
 
     <div class="container-main">
+
 
         <div class="container-boxes">
 
@@ -547,9 +536,9 @@
                     <div class="div-div-flex">
                         <div class="section-gender">
                             <select name="" id="">
-                                    <option value="">+994</option>
-                                    <option value="">+1</option>
-                                    <option value="">+836</option>
+                                <option value="">+994</option>
+                                <option value="">+1</option>
+                                <option value="">+836</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -557,15 +546,15 @@
                             <input type="text">
                         </div>
                     </div>
-                    
-                   
+
+
                 </div>
 
                 <div class="text-person">
                     <p>To save your changes, enter your current password below
                     </p>
                 </div>
-                
+
                 <div class="down-checkbox-input">
                     <div class="checkbox-div">
                         <input type="checkbox">
@@ -580,9 +569,9 @@
                         </label>
                     </div>
                 </div>
-               
+
                 <hr class="hr-right">
-                
+
 
                 <div class="current-content">
                     <!-- <div class="current-password">
@@ -599,7 +588,7 @@
                             <div class="btn-payment">
                                 <button><span>save details</span> <i class="fa-solid fa-angle-right"></i></button>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -655,14 +644,18 @@
 
 
             </div>
-            <p id="top">Lorem Ipsum is simply dummy text of the</p>
-            <p>Sing up and get 15% off</p>
+
+            <div class="text-footer-cont">
+                <p id="top">Lorem Ipsum is simply dummy text of the</p>
+                <p>Sing up and get 15% off</p>
+            </div>
 
 
-            <label for="">
+            <div class="send-message-input">
                 <input id="Input" placeholder="email" type="email">
-                <button id="Btn">Send</button>
-            </label>
+                <button id="Btn-send">Send</button>
+            </div>
+
 
         </div>
 
@@ -704,7 +697,7 @@
 
 
 
-
+<script src="hamburger.js"></script>
     <script src="main.js"></script>
     <script>
         const modal = document.querySelector(".modal");

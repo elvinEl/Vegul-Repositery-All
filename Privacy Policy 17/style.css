@@ -96,7 +96,7 @@ justify-content: space-between;
 .footer-3 p{
     color: white;
 }
-#Btn{
+#Btn-send{
     color: rgba(255, 255, 255, 0.34);
     background-color: #141414;
     padding: 9.5px;
@@ -155,4 +155,154 @@ footer-fot{
 .icons i{
     padding: 0 5px;
     color: black;
+}
+
+.main-content-name{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+nav{
+    display: none;
+}
+.left-text{
+    display: none;
+}
+.right-text br{
+    display: none;
+}
+.right-text{
+    margin-top: 3rem;
+}
+.div-center{
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+footer {
+    flex-direction: column;
+
+    background-color: #86724C;
+    padding: 0 !important;
+    justify-content: flex-start;
+    gap: 32px;
+    height: 80%;
+}
+
+footer-fot {
+    flex-direction: column-reverse;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#Btn-send {
+    background-color: white;
+    color: #86724C;
+    padding: 9.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-mor {
+    background-color: #86724C;
+    color: white;
+    border: none;
+}
+
+.logo {
+    margin: 0 !important;
+}
+
+.footer-1 {
+    margin-top: 1rem;
+}
+
+.fot-left p {
+    padding: 0 !important;
+}
+
+.fot-left {
+    margin: 1rem auto;
+}
+
+.footer-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-footer-cont {
+    max-width: 71%;
+    margin: 0 auto;
+}
+
+#top {
+    margin-top: 2rem;
+}
+
+.send-message-input {
+    max-width: 70%;
+    margin: 0.5rem auto 30px auto;
+}
+
+.text-footer-cont {
+    max-width: 71%;
+    margin: 0 auto;
+}
+
+.footer-3 {
+    margin-bottom: 30px;
+}
+
+.footer-icons {
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.main-content-name {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 18px;
+}
+.content-name-icon{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.content-name-icon i{
+    color: black;
+    font-size: 18px;
+}
+
 }

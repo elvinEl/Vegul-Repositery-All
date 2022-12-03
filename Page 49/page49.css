@@ -30,14 +30,14 @@
     color: black;
 }
 
-.icons {
+.icons-i {
     position: absolute;
     top: 6.1rem;
     right: 15rem;
     font-size: 18px;
 }
 
-.icons i {
+.icons-i i {
     padding: 0 5px;
     color: black;
 }
@@ -97,7 +97,7 @@
 }
 
 .second-boxes input {
-    width: 611px;
+    width: 100%;
     height: 40px;
 }
 
@@ -159,7 +159,7 @@
 
 .section-gender select {
     height: 40px;
-    width: 100px;
+    width: 100%;
     text-align: center;
 }
 
@@ -304,7 +304,7 @@ footer a {
     color: white;
 }
 
-#Btn {
+#Btn-send {
     color: rgba(255, 255, 255, 0.34);
     background-color: #141414;
     padding: 9.5px;
@@ -364,14 +364,14 @@ footer-fot {
     color: rgba(94, 94, 94, 1);
 }
 
-.icons {
+.icons-i {
     position: absolute;
     top: 7rem;
     right: 15rem;
     font-size: 11px;
 }
 
-.icons i {
+.icons-i i {
     padding: 0 5px;
     color: black;
 }
@@ -393,7 +393,7 @@ footer-fot {
     padding: 0 5px;
 }
 .section-country select{
-    width: 611px;
+    width: 100%;
     height: 40px;
 }
 .section-country p{
@@ -413,9 +413,261 @@ footer-fot {
 }
 .content-inf input{
     height: 40px;
-    width: 197px;
+    width: 100%;
 }
 .input-number input{
     height: 40px;
-    width: 160px;
+    width:100%;
+}
+.div-main-box{
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+.burger .line2 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.burger .line1,
+.burger .line3 {
+    width: 23px;
+    height: 3px;
+    background-color: black;
+}
+
+.line2 {
+    margin: 3px 0;
+}
+.div-main-box{
+    display: none;
+}
+.icons-i{
+    position: absolute;
+      top: 7rem;
+      right: 15rem;
+      font-size: 20px;
+  }
+  .icons-i i {
+    padding: 0 5px;
+    color: #000;
+  } 
+.hr-line{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+
+    nav>.ul-reset>.droppable {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+.hr-line{
+    width: 100%;
+    display: block;
+}
+
+    .container-img img {
+        max-width: 32px;
+    }
+
+    .icons-i {
+        position: absolute;
+        right: 0.5rem;
+        top: 1.5rem;
+        font-size: 20px ;
+    }
+
+    .icons-i i {
+        padding: 0 5px;
+        color: black;
+    }
+
+
+
+
+
+
+.container-boxes{
+   max-width: 90%;
+margin: 1rem auto;
+}
+.left-text{
+    display: none;
+}
+.first-boxes{
+    display: flex;
+    flex-direction: column;
+}
+.information-div{
+    flex-direction: column;
+}
+.current-content{
+    justify-content: center;
+}
+.input-number input{
+    width:100%;
+}
+.input-number{
+    width: 100%;
+}
+.section-gender{
+    width: 20%;
+}
+.right-box>p{
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.div-main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.form-control-box>.form-control{
+    width: 100%;
+}
+.down-checkbox-input{
+    margin-top: 0;
+    line-height: 2;
+}
+
+
+
+    /* footer */
+
+    
+footer {
+    flex-direction: column;
+
+    background-color: #86724C;
+    padding: 0 !important;
+    justify-content: flex-start;
+    gap: 32px;
+    height: 80%;
+}
+
+footer-fot {
+    flex-direction: column-reverse;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#Btn-send {
+    background-color: white;
+    color: #86724C;
+    padding: 9.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-mor {
+    background-color: #86724C;
+    color: white;
+    border: none;
+}
+
+.logo {
+    margin: 0 !important;
+}
+
+.footer-1 {
+    margin-top: 1rem;
+}
+
+.fot-left p {
+    padding: 0 !important;
+}
+
+.fot-left {
+    margin: 1rem auto;
+}
+
+.footer-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-footer-cont {
+    max-width: 71%;
+    margin: 0 auto;
+}
+
+#top {
+    margin-top: 2rem;
+}
+
+.send-message-input {
+    max-width: 70%;
+    margin: 0.5rem auto 30px auto;
+}
+
+.text-footer-cont {
+    max-width: 71%;
+    margin: 0 auto;
+}
+
+.footer-3 {
+    margin-bottom: 30px;
+}
+
+.footer-icons {
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.main-content-name {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 18px;
+}
+.content-name-icon{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.content-name-icon i{
+    color: black;
+    font-size: 18px;
+}
+
 }

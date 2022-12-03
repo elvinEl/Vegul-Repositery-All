@@ -24,72 +24,84 @@
 .left-text p {
     font-size: 18px;
 }
-#lang{
+
+#lang {
     font-size: 23px;
     margin-top: 2rem;
 }
-.language-select select{
+
+.language-select select {
     height: 40px;
     width: 300px;
     margin-top: 2rem;
     border-radius: 6px;
 }
 
-.hr-line{
+.hr-line {
     height: 1px;
     width: 650px;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
-.div-checkbox{
+
+.div-checkbox {
     display: flex;
 }
-.div-checkbox-flex{
+
+.div-checkbox-flex {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
 }
-.row-2{
+
+.row-2 {
     margin-top: 2rem;
 }
-.div-checkbox label{
+
+.div-checkbox label {
     font-size: 18px;
     margin-left: 0.3rem;
 }
-.div-checkbox-flex p{
-font-size: 14px;
-margin-top: 0.2rem;
+
+.div-checkbox-flex p {
+    font-size: 14px;
+    margin-top: 0.2rem;
 }
-.checkbox-box>p{
+
+.checkbox-box>p {
     font-size: 23px;
 }
-.sms-checkbox p{
+
+.sms-checkbox p {
     margin-top: 0.2rem;
     font-size: 14px;
 }
-.sms-checkbox>p{
+
+.sms-checkbox>p {
     font-size: 23px;
 }
-.current-btn-2{
+
+.current-btn-2 {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
 .current-btn-2 button {
     padding: 0.8rem 5rem;
-     background-color: black;
-     color: white;
-     margin-top: 1rem;
-     border: none;
-     border-radius: 6px;
-     cursor: pointer;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     gap: 1rem;
- }
+    background-color: black;
+    color: white;
+    /* margin-top: 1rem; */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
 
- /* footer */
- 
+/* footer */
+
 footer {
     background-color: black;
     height: 300px;
@@ -139,7 +151,7 @@ footer a {
     color: white;
 }
 
-#Btn {
+#Btn-send {
     color: rgba(255, 255, 255, 0.34);
     background-color: #141414;
     padding: 9.5px;
@@ -199,14 +211,14 @@ footer-fot {
     color: rgba(94, 94, 94, 1);
 }
 
-.icons {
+.icons-i {
     position: absolute;
     top: 7rem;
     right: 15rem;
-    font-size: 11px;
+    font-size: 16px;
 }
 
-.icons i {
+.icons-i i {
     padding: 0 5px;
     color: black;
 }
@@ -227,30 +239,303 @@ footer-fot {
 .content-right {
     padding: 0 5px;
 }
-.section-country select{
+
+.section-country select {
     width: 611px;
     height: 40px;
 }
-.section-country p{
+
+.section-country p {
     margin-top: 1rem;
 }
-.input-margin{
+
+.input-margin {
     margin-top: 1rem;
 }
-.content-inf{
+
+.content-inf {
     display: flex;
     flex-direction: column;
 }
-.information-div{
+
+.information-div {
     display: flex;
     gap: 10px;
     margin-top: 1rem;
 }
-.content-inf input{
+
+.content-inf input {
     height: 40px;
     width: 197px;
 }
-.input-number input{
+
+.input-number input {
     height: 40px;
     width: 160px;
+}
+
+.nav-links{
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+.burger .line2 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.burger .line1,
+.burger .line3 {
+    width: 23px;
+    height: 3px;
+    background-color: black;
+}
+
+.line2 {
+    margin: 3px 0;
+}
+
+.hr-line1{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    nav>.ul-reset>.droppable {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .icons-i {
+        right: 0.5rem;
+        top: 1.5rem;
+        font-size: 20px;
+    }
+
+    .container-img img {
+        max-width: 32px;
+    }
+
+    .icons-i {
+        position: absolute;
+        right: 0.5rem;
+        top: 1.5rem;
+        font-size: 20px;
+    }
+    .icons-i i{
+        padding: 0 5px;
+        color: black;
+    }
+
+    .form-control-box input {
+        width: 100% !important;
+    }
+
+    .left-text {
+        display: none;
+    }
+.hr-line{
+    width: 100%;
+margin-top: 0;
+margin-bottom: 1rem;
+}
+    .div-checkbox-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .language-select select {
+        width: 100%;
+        margin: 0;
+    }
+    .language-select{
+        margin: 1rem 0 2rem;
+    }
+    #lang-down-text{
+        margin-top: 2rem;
+    }
+    .container-boxes {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .btn-payment{
+        display: flex;
+        justify-content: center;
+    }
+    br{
+        display: none;
+    }
+    .div-checkbox-flex{
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+
+        background-color: #86724C;
+        padding: 0 !important;
+        justify-content: flex-start;
+        gap: 32px;
+        height: 80%;
+    }
+
+    footer-fot {
+        flex-direction: column-reverse;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #Btn-send {
+        background-color: white;
+        color: #86724C;
+        padding: 9.5px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-mor {
+        background-color: #86724C;
+        color: white;
+        border: none;
+    }
+
+    .logo {
+        margin: 0 !important;
+    }
+
+    .footer-1 {
+        margin-top: 1rem;
+    }
+
+    .fot-left p {
+        padding: 0 !important;
+    }
+
+    .fot-left {
+        margin: 1rem auto;
+    }
+
+    .footer-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-icons {
+        justify-content: space-around;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .text-footer-cont {
+        max-width: 71%;
+        margin: 0 auto;
+    }
+
+    #top {
+        margin-top: 2rem;
+    }
+
+    .send-message-input {
+        max-width: 70%;
+        margin: 0.5rem auto 30px auto;
+    }
+
+    .text-footer-cont {
+        max-width: 71%;
+        margin: 0 auto;
+    }
+
+    .footer-3 {
+        margin-bottom: 30px;
+    }
+
+    .footer-icons {
+        justify-content: space-around;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-content-name {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        font-size: 18px;
+    }
+
+    .content-name-icon {
+        position: absolute;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    .content-name-icon i {
+        color: black;
+        font-size: 18px;
+  
+    }
+    hr.hr-line1{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(231, 230, 230, 1);
+    }
+    .div-main-box{
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
 }

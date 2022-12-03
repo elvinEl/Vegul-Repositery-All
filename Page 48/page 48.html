@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="mega-menu.css">
     <link rel="stylesheet" href="modal1.css">
+    <link rel="stylesheet" href="hamburger-menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +18,22 @@
 
 <body>
     <nav>
+
+
+        <ul class="nav-links">
+            <li><a href="#">shop </a></li>
+            <li><a href="#">new in</a></li>
+            <li><a href="#">accessories</a></li>
+            <li><a href="#">bags</a></li>
+            <li><a href="#">jewellery</a></li>
+        </ul>
+       
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
         <section class="container">
             <div class="menus">
 
@@ -240,33 +257,33 @@
                 <!-- .mega-menu-->
             </li>
 
-            <div class="icon-box">
-                <div class="icons">
+            <!-- <div class="icon-box"> -->
+            <div class="icons-i">
 
-                    <a href="#" class="trigger">
-                        <i class="fa-regular fa-circle-user"></i>
-                    </a>
-                    <a href="#" class="trigger1">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-user"></i>
+                </a>
+                <a href="#" class="trigger1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
 
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-solid fa-location-dot"></i></a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
+            <!-- </div> -->
 
         </ul>
 
         <!-- .container .ul-reset -->
     </nav>
-
+<hr class="hr-line1">
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
 
-            <p id="header-p">Come on in</p>
-            <div class="modal-nav">
+    <p id="header-p">Come on in</p>
+           <div class="modal-nav">
                 <ul>
 
                     <li class="nav__item"><a href="#login" data-tab="login" class="nav-tab active">
@@ -417,6 +434,9 @@
     </div>
 
     <div class="container-main">
+        <div class="div-main-box">
+            <p><strong>CONNECTED SERVICE</strong></p>
+        </div>
         <div class="container-boxes">
             <div class="left-text">
                 <div class="div-22">
@@ -429,8 +449,10 @@
 
 
             <div class="right-box">
-                <p id="lang">Language</p>
-                <p>Select the language you’d like to receive your vegul communication</p>
+              
+              
+                <p id="lang"><strong>Language</strong></p>
+                <p id="lang-down-text">Select the language you’d like to receive your vegul communication</p>
 
                 <div class="language-select">
 
@@ -441,11 +463,12 @@
                     </select>
 
                 </div>
+              
                 <hr class="hr-line">
 
 
                 <div class="checkbox-box">
-                    <p>Email</p>
+                    <p><strong>Email</strong></p>
                     <div class="div-checkbox-flex">
 
 
@@ -521,7 +544,7 @@
 
 
                 <div class="sms-checkbox">
-                    <p>Sms</p>
+                    <p><strong>Sms</strong></p>
                     <div class="row-2">
                         <div class="div-checkbox">
                             <input type="checkbox">
@@ -594,14 +617,19 @@
     
     
                 </div>
-                <p id="top">Lorem Ipsum is simply dummy text of the</p>
-                <p>Sing up and get 15% off</p>
+
+                <div class="text-footer-cont">
+                    <p id="top">Lorem Ipsum is simply dummy text of the</p>
+                    <p>Sing up and get 15% off</p>
+                </div>
+               
     
     
-                <label for="">
-                    <input id="Input" placeholder="email" type="email">
-                    <button id="Btn">Send</button>
-                </label>
+           <div class="send-message-input">
+            <input id="Input" placeholder="email" type="email">
+            <button id="Btn-send">Send</button>
+           </div>
+                    
     
             </div>
     
@@ -628,7 +656,7 @@
 
 
 
-
+<script src="hamburger.js"></script>
     <script src="main.js"></script>
     <script>
         const modal = document.querySelector(".modal");
